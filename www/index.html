@@ -30,9 +30,11 @@
 		<ion-content>
 			<ion-view view-title="Login" name="login-view" class="background">
 				<ion-content class="padding">
-					<ion-nav-title>
-					<img src="..\img\ionic.png">
-					</ion-nav-title>
+					<!-- <ion-nav-title> -->
+					<div id="logo-container">
+						<img src="img/logo.png">
+					</div>
+					<!-- </ion-nav-title> -->
 					<div class="list list-inset">
 						<label class="item item-input">
 							<input type="text" placeholder="Username" ng-model="data.username">
@@ -53,10 +55,14 @@
 
 <style type="text/css">
 	.background {
-		background: url(background.jpg) no-repeat center center fixed; 
+		background: url('img/background.jpg') no-repeat center center fixed; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		background-size: cover;
+	}
+	#logo-container img {
+		width: 50%;
+		height: 50%;
 	}
 
 </style>
